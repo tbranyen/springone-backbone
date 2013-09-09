@@ -14,13 +14,11 @@ var SlideItem = Backbone.Component.extend({
 
     // Determine if this is the correct slide. 
     if (location.hash.slice(1) === this.$el.attr("id")) {
-      // Empty the console
+      // Empty the console.
       console.clear();
 
-      var html = $.trim(this.$("[slide-notes]").html());
-
       // Display the speaker notes for this slide.
-      console.log(notes ? html : "Good luck; look ma' no hands!");
+      console.log($.trim(notes) || "Good luck!");
     }
   },
 

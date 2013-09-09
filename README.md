@@ -1,11 +1,11 @@
-![](https://github.com/tbranyen/growing-up-with-backbone/raw/master/images/splash.png)
+![](https://github.com/tbranyen/springone-backbone/raw/master/images/splash.png)
 
 About
 -----
 
-This is a talk about structuring your application using modern tools and how to
-futher enhance using ES6 modules (today) and the concept of Web Components
-(templates, scoped css, and custom elements).
+This is a talk about why you may need to use a tool like Backbone to create a
+rich client side application.  Concepts apply universally to other frameworks,
+but are illustrated with a Backbone context.
 
 View the slides
 ---------------
