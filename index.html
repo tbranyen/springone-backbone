@@ -18,47 +18,39 @@
     <slide-item id="1">
       <h1>SpringOne Backbone.js</h1>
 <style scoped>
-  @host {
-    background: #FFF;
-
-    overflow-y: hidden;
-    overflow-x: hidden;
-  }
-
   h1 {
     font-weight: normal;
     font-size: 42px;
     color: #333;
-    padding-top: 70px;
   }
 </style>
+
+<script type="speaker-notes">
+- Good luck, you're gonna need it!
+</script>
 
     </slide-item>
 
     <slide-index>Slide #1</slide-index>
   
     <slide-item id="2">
-      <h1>Through the nature of the web we, <span class="as">as frontend developers</span>, have become independent framework authors.</h1>
+      <p><img src="/images/robocoup.png"></p>
 <style scoped>
   @host {
-    background: #444;
-  }
-
-  h1 {
-    color: #FFF;
-  }
-
-  .as {
-    color: #999;
+    background: #FFF;
   }
 </style>
 
-<script type="none" slide-notes>
-This means that as developers we have to think about how to customize our
-tools that lint, build, install our dependencies, load our modules, etc.
+<script type="speaker-notes">
+- Been trying to stray from talking about myself in the beginning.
+  - But, since it's my first Java conference, might be a good idea to establish who I am.
 
-Development is actually a lot easier than we make it out to be, its just a
-small subset of tools that virtually every server side environment provides.
+- Tim Branyen
+  - @tbranyen online alias
+  - Bocoup (Boston)
+  - Open source developer
+  - Been contributing to and promoting Backbone for the past two years.
+  - Backbone Boilerplate & Backbone LayoutManager.
 </script>
 
     </slide-item>
@@ -66,47 +58,22 @@ small subset of tools that virtually every server side environment provides.
     <slide-index>Slide #2</slide-index>
   
     <slide-item id="3">
-      <h1>Learn to <span class="structure">structure</span> your application with <span class="modules">modular</span> techniques that support <span class="components">components</span>.</h1>
+      <p><img src="/images/site-app.png"></p>
 <style scoped>
   @host {
-    background: #333;
-  }
-
-  h1 {
-    color: #FFF;
-  }
-
-  .structure {
-    color: #37CDF3;
-  }
-
-  .modules {
-    color: #55F337;
-  }
-
-  .components {
-    color: #F33737;
-  }
-
-  .data-binding {
-    color: #F3C637;
+    background: #FFF;
   }
 </style>
 
-<script type="none" slide-notes>
-* Structure is important, anecdotally I've found it has helped numerous
-  developers get started on a project when it's well organized.
+<script type="speaker-notes">
+- Not a debate about server or client side.
+  - They are both necessary and not mutually exclusive.
 
-* Modular techniques provide an easier way to think about any kind of code and
-  how it's loaded.  I find they are especially suited to Web Components
-  mentality.
+- What are you designing?
+  - Is this about content or functionality?
+  - Are your end users on very low bandwidth (mobile)?
 
-* Web Components are "yet-another-shift" in thinking about how you build a web
-  application.
-
-* Data binding is important enough of a *thing* that the Polymer project is
-  working on a "spec" called MDV.  Ractive recently got a lot of attention and
-  it's perfectly suited to Backbone.
+- PE is about layering and enhancement, not about JS being on or off.
 </script>
 
     </slide-item>
@@ -114,44 +81,18 @@ small subset of tools that virtually every server side environment provides.
     <slide-index>Slide #3</slide-index>
   
     <slide-item id="4">
-      <div class="linux">
-  <h1>Linux philsophy</h1>
-
-  <img src="images/simplicity.png">
-</div>
-
-
-<div class="apple">
-  <h1>Apple philosophy</h1>
-
-  <iframe width="620" height="330" src="http://www.youtube.com/embed/QhhFQ-3w5tE" frameborder="0" allowfullscreen></iframe>
-</div>
-
-
+      <h2>My favorite web application</h2>
+<p><img src="/images/tweetdeck.png"></p>
 <style scoped>
   @host {
-    background: #222;
-    -webkit-box-orient: horizontal;
-  }
-
-  h1 {
-    color: #FFF;
-  }
-
-  .linux {
-    -webkit-flex: 0 .5;
-    margin-right: 10px;
-  }
-
-  .apple {
-    -webkit-flex: .5;
+    background: #FFF;
   }
 </style>
 
-<script type="none" slide-notes>
-* They are not mutual exclusive either.
-
-* Fast forward point is 25 min on the nose.
+<script type="speaker-notes">
+- By far my favorite web application.
+- Does not do well without JavaScript.
+  - Which is fine considering the audience.
 </script>
 
     </slide-item>
@@ -159,46 +100,25 @@ small subset of tools that virtually every server side environment provides.
     <slide-index>Slide #4</slide-index>
   
     <slide-item id="5">
-      <h1>Improving Web Application structure.</h1>
-<p><span class="styled">
-Don&#39;t worry about modules or frameworks or anything, but the browser and
-JavaScript.
-</span></p>
-<pre><code class="lang-javascript">&lt;script src=&quot;?&quot;&gt;&lt;/script&gt;</code></pre>
+      <h2>Its website counterpart</h2>
+<p><img src="/images/twitter.png"></p>
 <style scoped>
   @host {
-    background-color: hsl(192, 89%, 20%);
-  }
-
-  h1 {
-    color: #FFF;
-  }
-
-  .styled {
-    color: #FFF;
-    opacity: .4;
-    opacity: .4;
-  }
-
-  pre {
-    min-width: 0 !important;
+    background: #FFF;
   }
 </style>
 
-<script type="none" slide-notes>
-Was talking to Mike P. about how frameworks and modules don't have much to do
-with your structure and he mentioned how something like UMD can exist is a good
-example of that.
+<script type="speaker-notes">
+- Almost never use the website.
+  - Except for when I'm remote.
 
-We develop in JavaScript (or CoffeeScript) and push to browsers (when talking
-specifically about web apps).
-
-Tab 2
------
-
-  * GitHub Viewer refactor branch.
-    - Grunt build process.
-  * Chrome open.
+- Good for SEO, accessibility, and load performance.
+  - I don't totally buy the load performance.
+  - Many intelligent designs could alleviate issues with loading.
+    - Bootstrapping data.
+    - Lazy loading JavaScript that isn't used immediately.
+    - Leverage caching.
+    - Minify and static GZip (why isn't everyone always already doing this??)
 </script>
 
     </slide-item>
@@ -206,33 +126,23 @@ Tab 2
     <slide-index>Slide #5</slide-index>
   
     <slide-item id="6">
-      <h1>The concept behind building your application instead of delivering it raw is that you get a smaller bundle and more easily distribute more maintainable code.</h1>
-<p><img src="images/gruntjs.png"></p>
+      <p><img src="/images/javascript.png"></p>
 <style scoped>
   @host {
-    background-color: hsl(192, 65%, 26%);
-    color: #FFF;
+    background: #FFF;
+    text-align: center;
   }
 
   img {
-    border: none;
+    width: 50%;
   }
 </style>
 
-<script type="none" slide-notes>
-- Not new to a lot of developers who are already using
-  transpilers/preprocessors.
-
-- If you are new to something like this, it can seem rather daunting since you
-  are either at the whim of your server guys who are deploying or rolling your
-  own thing even though something that probably already does it exists.
-
-- I greatly recommend using something like Grunt.  I've used Jake, Make, and
-  rolled my own builder in the past.  I've found that Grunt was written by
-  someone doing the tasks we need to do.
-
-- Talking about Grunt rest of the slides since that's what Backbone Boilerplate
-  uses and what I'm committed to using.
+<script type="speaker-notes">
+- JavaScript is the open web programming language.
+- At the moment it is terrible for large application development.
+- BUT, we have had tools for a long time to fix it.
+- AND, ES6 is right around the corner, you can start using some of it's featureset today too.
 </script>
 
     </slide-item>
@@ -240,37 +150,19 @@ Tab 2
     <slide-index>Slide #6</slide-index>
   
     <slide-item id="7">
-      <h1>Third party rules.</h1>
-<p>Separate <span class="your">your code</span> from any <span
-class="third">third-party code</span> in your application.</p>
-<pre><code class="lang-markup">.
-├── app
-│   └── modules
-└── vendor
-
-3 directories, 0 files</code></pre>
+      <h1>Lets look at what Backbone gives, and doesn&#39;t give, you.</h1>
 <style scoped>
   @host {
-    background-color: hsl(192, 64%, 29%);
-    color: #FFF;
+    background: #FFF;
   }
-
-  .your, .third {
-    opacity: .5;
-    text-decoration: underline;
-  }
-
 </style>
 
-<script type="none" slide-notes>
-- What you mean here is that there is a separation from where you are putting
-  your modular code, from say, where a third party vendor's code is.
+<script type="speaker-notes">
+- Not the end all framework.
+- Not the "next" jQuery.
 
-- This is useful for a number of reasons, including treating your code with a
-  higher standard of quality by using stricter linting.  You may want to
-  transpile your code from ES6 into AMD.  CoffeeScript into JavaScript.
-
-- Keep it separate and globbing becomes much easier.
+- Very lightweight and flexible.
+- Popularized a declarative model.
 </script>
 
     </slide-item>
@@ -278,123 +170,99 @@ class="third">third-party code</span> in your application.</p>
     <slide-index>Slide #7</slide-index>
   
     <slide-item id="8">
-      <h1>Cleaning and Linting.</h1>
-<p>Linting can be provided by your code editor and cleaning out a directory is not
-a slide-worthy task.</p>
+      <p>Backbone.js is an MVC library that assists with organization and structure
+of modern web applications.</p>
+<p>It has the following dependencies:</p>
+<ul>
+<li><a href="http://underscorejs.org">Underscore.js</a> or <a href="http://lodash.com">lodash</a></li>
+<li><a href="http://jquery.com">jQuery</a> or <a href="http://zeptojs.com">zepto.js</a></li>
+</ul>
+<p>Documentation and project information:</p>
+<ul>
+<li><a href="http://backbonejs.org"><a href="http://backbonejs.org">http://backbonejs.org</a></a></li>
+</ul>
+<p>Source Code on GitHub:</p>
+<ul>
+<li><a href="http://github.com/documentcloud/backbone"><a href="http://github.com/documentcloud/backbone">http://github.com/documentcloud/backbone</a></a></li>
+</ul>
 <style scoped>
   @host {
-    background-color: hsl(192, 43%, 34%);
+    background: #FFF;
+  }
+
+  ul {
+    font-size: 20px;
   }
 </style>
-
-<script type="none" scoped>
-- Starting a build with linted code, and a clean, reset, environment is a good
-way to start.
-</script>
 
     </slide-item>
 
     <slide-index>Slide #8</slide-index>
   
     <slide-item id="9">
-      <h1>Rewriting sources.</h1>
-<p>A common task is being able to rewrite your development source from your
-production source.  This is especially true when using something like
-RequireJS.</p>
-<pre><code class="lang-bash">npm install grunt-processhtml</code></pre>
-<pre><code class="lang-markup">&lt;!doctype html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+      <p>Designed around events - Almost all class types emit events about their state. </p>
+<p>Events are a powerful way to reduce coupling.</p>
+<pre><code class="lang-javascript">// Is a mixin.
+var myObj = _.extend({}, Backbone.Events);
 
-  &lt;title&gt;GitHub Viewer&lt;/title&gt;
+// Wait for the event `something` to be triggered.
+myObj.on(&quot;something&quot;, function(data) {
+  console.log(data);
+});
 
-  &lt;!-- Application styles. --&gt;
-  &lt;!-- build:[href] /styles.css --&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;/app/styles/index.css&quot;&gt;
-  &lt;!-- /build --&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-  &lt;!-- Application container. --&gt;
-  &lt;main role=&quot;main&quot; id=&quot;main&quot;&gt;&lt;/main&gt;
-
-  &lt;!-- Application source. --&gt;
-  &lt;!-- build:[src] /source.min.js --&gt;
-  &lt;script data-main=&quot;/app/main&quot; src=&quot;/vendor/bower/requirejs/require.js&quot;&gt;&lt;/script&gt;
-  &lt;!-- /build --&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
+// Trigger the event from anywhere, passing a String.
+myObj.trigger(&quot;something&quot;, &quot;with some data!&quot;);</code></pre>
 <style scoped>
   @host {
-    background-color: hsl(192, 43%, 34%);
+    background: #FFF;
   }
 
-  pre {
-    width: 900px;
+  ul {
+    font-size: 20px;
   }
 </style>
-
-<script type="none" slide-notes>
-- Plugin: https://github.com/dciccale/grunt-processhtml
-
-- There are other completely valid ways of doing this, I've just found it works
-  incredibly well (since I've already been using something similar, called
-  grunt-targethtml).
-
-- Main benefit is that you can stay in HTML and do not require any special
-  processing of your HTML during development.
-</script>
 
     </slide-item>
 
     <slide-index>Slide #9</slide-index>
   
     <slide-item id="10">
-      <h1>Making your JavaScript as small as possible and still debuggable.</h1>
-<p><img src="images/network.png"></p>
-<p><span class="styled">VVVV</span></p>
-<p><img src="images/debug.png"></p>
+      <p>Backbone has inheritance that works, but it leaves much to be desired.</p>
+<pre><code class="lang-javascript">var ModelDefinition = Backbone.Model.extend({
+  // Instance properties go here, shared on all instances.
+}, {
+  // Class properties go here, only available on `ModelDefinition`.
+});
+
+// Create an instance of the ModelDefinition.
+var modelInstance = new ModelDefinition();</code></pre>
+<p>For instance, there is no clean way to create a custom construct.</p>
+<pre><code class="lang-javascript">function CustomConstruct() {
+  // Initialization code here.
+}
+
+// Instance properties
+_.extend(CustomConstruct.prototype, {
+  someMethod: function() {}
+});
+
+// This sort of works.
+CustomConstruct.extend = Backbone.Model.extend;</code></pre>
 <style scoped>
   @host {
-    background-color: hsl(192, 34%, 43%);
+    background: #FFF;
   }
 
-  h1 {
-    color: #FFF;
-  }
-
-  .styled {
-    color: #FFF;
-    opacity: .4;
-    opacity: .4;
-  }
-
-  pre {
-    min-width: 0 !important;
+  ul {
+    font-size: 20px;
   }
 </style>
 
-<script type="none" slide-notes>
-Source Maps support:
 
-Shaky at best right now.  Two different implementations:
-
-https://docs.google.com/document/d/1U1RGAehQwRypUTovF1KRlpiOFze0b-_2gc6fAH0KY0k/edit
-
-The generated code may include a line at the end of the source, with the following form:
-
-//# sourceMappingURL=<url>
-
-Note: The prefix for this annotation was initially “//@” however this conflicts with Internet Explorer’s Conditional Compilation and was changed to “//#”.  It is reasonable for tools to also accept “//@” but “//#” is preferred.
-
-
-
-* Django: https://github.com/miracle2k/webassets
-* Rails: https://github.com/rails/sprockets-rails/ (Not much information on it).
-* Node: https://github.com/mishoo/UglifyJS2
+<script type="speaker-notes">
+- All Backbone constructs are extended and initialized the same way.
+- TitleCase the constructs.
+- camelCase the instances.
 </script>
 
     </slide-item>
@@ -402,41 +270,62 @@ Note: The prefix for this annotation was initially “//@” however this confli
     <slide-index>Slide #10</slide-index>
   
     <slide-item id="11">
-      <h1>You can switch <span class="styled">any</span> technology out.  Understand its <span class="styled">role</span> and why it&#39;s important.</h1>
+      <h3>Routers and History</h3>
+<pre><code class="lang-javascript">var ApplicationRouter = Backbone.Router.extend({
+  routes: {
+    // Store routes here.
+  },
+
+  // Route methods here.
+});
+
+// Initialize the Router.
+var applicationRouter = new ApplicationRouter();
+
+// Tell Backbone to start monitoring the changes in browser history.
+Backbone.history.start();</code></pre>
+<ul>
+<li>Multiple routers can be used so long as the route paths are unique.</li>
+<li>HTML5 History API (commonly known as <code>pushState</code>) can be enabled with:</li>
+</ul>
+<pre><code class="lang-javascript">Backbone.history.start({ pushState: true });</code></pre>
 <style scoped>
   @host {
-    background-color: hsl(192, 31%, 56%);
+    background: #FFF;
   }
 
-  h1 {
-    color: #FFF;
-  }
-
-  .styled {
-    color: #FFF;
-    opacity: .4;
-    opacity: .4;
+  ul {
+    font-size: 20px;
   }
 </style>
-
-<script type="none" slide-notes>
-If you know how to do this already in another framework or task runner, then
-use it! No excuse.  I don't see nearly enough developers implementing source
-maps.
-
-Make it trivial! This is something you learn once and iterate on.
-</script>
 
     </slide-item>
 
     <slide-index>Slide #11</slide-index>
   
     <slide-item id="12">
-      <h1>Architecting your application with modules will make your code easier to test and maintain.</h1>
+      <h3>Views</h3>
+<pre><code class="lang-javascript">var SomeView = Backbone.View.extend({
+  el: &lt;element to attach to here&gt;
+
+  events: {
+    // DOM Events added here.
+  }
+});
+
+// Initialize the View.
+var someView = new SomeView();</code></pre>
+<ul>
+<li>Views can get super complex, look into a plugin to assist with large apps.</li>
+<li>No data binding out of the box (or even a usable <code>render</code> method).</li>
+</ul>
 <style scoped>
   @host {
-    background-color: #43A331;
-    color: #FFF;
+    background: #FFF;
+  }
+
+  ul {
+    font-size: 20px;
   }
 </style>
 
@@ -445,10 +334,31 @@ Make it trivial! This is something you learn once and iterate on.
     <slide-index>Slide #12</slide-index>
   
     <slide-item id="13">
-      <p><img src="images/mockup.png"></p>
+      <h3>Models and Collections</h3>
+<pre><code class="lang-javascript">var Item = Backbone.Model.extend({
+  // Point to an external REST resource to sync with.
+  url: &quot;&quot;
+});
+
+var ItemCollection = Backbone.Collection.extend({
+  model: Item
+});
+
+// Initialize the Model.
+var item = new Item();
+
+// Add a new property.
+item.set(&quot;newProp&quot;, &quot;someValue&quot;);</code></pre>
+<ul>
+<li>Both Model and Collection proxy functional methods from underscore.</li>
+</ul>
 <style scoped>
   @host {
-    background-color: #50AA3F;
+    background: #FFF;
+  }
+
+  ul {
+    font-size: 20px;
   }
 </style>
 
@@ -457,45 +367,71 @@ Make it trivial! This is something you learn once and iterate on.
     <slide-index>Slide #13</slide-index>
   
     <slide-item id="14">
-      <h1>Universal Module Definition</h1>
-<pre><code class="lang-javascript">(function(window, factory) {
-  if (typeof exports === &quot;object&quot;) {
-    // Node. Does not work with strict CommonJS, but only CommonJS-like
-    // enviroments that support module.exports, like Node.
-    module.exports = factory();
-  } else if (typeof define === &quot;function&quot; &amp;&amp; define.amd) {
-    // Allow using this built library as an AMD module in another project. That
-    // other project will only see this AMD call, not the internal modules in
-    // the closure below.
-    define(factory);
-  } else {
-    // Browser globals case. Just assign the result to a property on the
-    // global.
-    window.WebApp = factory();
-  }
-}(this, function() {
-
-  // Your code goes here.
-
-}));</code></pre>
+      <h3>A typical workflow.</h3>
+<ul>
+<li>Create initial page markup.</li>
+<li>Define an application namespace to attach constructs from.</li>
+<li>Define Routers/Views/Models/etc.</li>
+<li>Once all code has loaded and all constructs are defined, start the app.</li>
+<li>The Router determines what to show.</li>
+<li>Views hook into the DOM and provide the necessary bridge.</li>
+<li>Models store data.</li>
+<li>Lots of glue to keep it from falling apart.</li>
+</ul>
 <style scoped>
   @host {
-    background-color: #5CB14C;
-    color: #FFF;
+    background: #FFF;
+  }
+
+  h3 {
+    color: #333;
+  }
+
+  ul {
+    font-size: 20px;
+  }
+
+  li {
+    line-height: 35px;
   }
 </style>
-
-<script type="none" slide-notes>
-No wonder why nobody wants to do write cross compatible modules in JavaScript.
-</script>
 
     </slide-item>
 
     <slide-index>Slide #14</slide-index>
   
     <slide-item id="15">
-      <script type="none" slide-notes>
-  - Compiling from ES6 to AMD.
+      <h3>Defining application namespace.</h3>
+<p>Useful for storing application specific constants and attaching modules to a
+global namespace.</p>
+
+<pre><code class="lang-javascript">var app = {
+  // Where application is located in the DOM.
+  mainElement: $(&quot;body&quot;),
+
+  // Store reference to API.
+  api: &quot;http://api.openweathermap.org/data/2.5/&quot;
+};</code></pre>
+<style scoped>
+  @host {
+    background: #FFF;
+  }
+
+  h3 {
+    color: #333;
+  }
+
+  pre {
+    min-width: 100%;
+  }
+
+  pre code {
+    line-height: 23px;
+  }
+</style>
+
+<script type="speaker-notes">
+
 </script>
 
     </slide-item>
@@ -503,34 +439,37 @@ No wonder why nobody wants to do write cross compatible modules in JavaScript.
     <slide-index>Slide #15</slide-index>
   
     <slide-item id="16">
-      <h1>Shimming.</h1>
-<p>How would you load JavaScript that wasn&#39;t compatible with your module loader?</p>
-<pre><code class="lang-javascript">require.config({
-  paths: {
-    &quot;some-plugin&quot;: &quot;./path/to/some-plugin&quot;
-  },
+      <h3>Starting the application.</h3>
+<pre><code class="lang-javascript">// This is triggered in the HTML once all the source code loads.
+app.start = function() {
+  // Store reference to Router.
+  app.router = new Router();
 
-  shim: {
-    &quot;some-plugin&quot;: {
-      deps: [&quot;jquery&quot;],
-      exports: &quot;SomePlugin&quot;
-    }
-  }
-});</code></pre>
+  // Kick off the Backbone route handling.
+  Backbone.history.start();
+};</code></pre>
 <style scoped>
   @host {
-    background-color: #60B84F;
-    color: #FFF;
+    background: #FFF;
+  }
+
+  h3 {
+    color: #333;
+  }
+
+  pre {
+    min-width: 100%;
+  }
+
+  pre code {
+    line-height: 23px;
   }
 </style>
 
-<script type="none" slide-notes>
-  - Necessary because there is no other way to load this JS.
-
-  1: Mapping the source to a friendly name.
-  2: Using that friendly name to make a definition.
-
-  - Effectively allows you to map global JavaScript to a module system.
+<script type="speaker-notes">
+- Very useful for loading individual modules without starting the application.
+  - If you start the application you may have side effects that influence
+    modules, which isn't very good for testing with a clean slate.
 </script>
 
     </slide-item>
@@ -538,40 +477,68 @@ No wonder why nobody wants to do write cross compatible modules in JavaScript.
     <slide-index>Slide #16</slide-index>
   
     <slide-item id="17">
-      <h1>Package Managers.</h1>
-<p>Brings third party code to a higher class citizen in your project.</p>
+      <h3>Initial page markup</h3>
+<pre><code class="lang-markup">&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot; manifest=&quot;cache.manifest&quot;&gt;
+&lt;head&gt;
+  &lt;!-- Meta tags... --&gt;
+
+  &lt;title&gt;WeatherProof&lt;/title&gt;
+
+  &lt;!-- Explicity define where icons exist on the server. --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;background&quot;&gt;&lt;img src=&quot;images/background.jpg&quot;&gt;&lt;/div&gt;
+
+  &lt;h1&gt;Weather&lt;span class=&quot;proof&quot;&gt;prooF&lt;/span&gt;&lt;/h1&gt;
+
+  &lt;form class=&quot;pure-form&quot;&gt;
+    &lt;img class=&quot;detect&quot; src=&quot;images/geolocation.png&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;pure-input-rounded&quot; placeholder=&quot;Find location.&quot;&gt;
+  &lt;/form&gt;
+
+  &lt;div class=&quot;weather&quot;&gt;&lt;/div&gt;
+
+  &lt;footer&gt;Powered by: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;OpenWeatherMap&lt;/a&gt;&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
 <style scoped>
   @host {
-    background-color: #72C561;
-    color: #FFF;
+    background: #FFF;
   }
 </style>
-
-<script type="none" slide-notes>
-  - Bower - has packages I need.
-  - Jam - has the config management I want.
-  - NPM - have their shit together
-
-  - Talk about configuration files here too.
-</script>
 
     </slide-item>
 
     <slide-index>Slide #17</slide-index>
   
     <slide-item id="18">
-      <h1>Build only what you reference.</h1>
-<p>Treat your script loader as a resource loader.</p>
+      <h4>Backbone dependencies</h4>
+<pre><code class="lang-markup">&lt;script src=&quot;underscore.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;jquery.js&quot;&gt;&lt;/script&gt;</code></pre>
+<h4>Backbone</h4>
+<pre><code class="lang-markup">&lt;script src=&quot;backbone.js&quot;&gt;&lt;/script&gt;</code></pre>
+<h4>Pure framework</h4>
+<p>Alternative to Bootstrap/Foundation for Grids, Typography, Tables, etc.</p>
+<pre><code class="lang-markup">&lt;link rel=&quot;stylesheet&quot; href=&quot;pure-min.css&quot;&gt;</code></pre>
 <style scoped>
   @host {
-    background-color: #84D374;
-    color: #FFF;
+    background: #FFF;
+  }
+
+  h4 {
+    padding-bottom: 4px;
+    display: block;
+    width: 100%;
+    margin-bottom: 0px;
+    text-align: center;
   }
 </style>
 
-<script type="none" slide-notes>
-  - Ensures only templates that have been referenced are built.
-  - Only CSS that's referenced gets injected.
+<script type="speaker-notes">
+- Backbone doesn't come with any UI style guide or recommendation.
+- You can swap out Underscore for LoDash's underscore compatibility build.
+- jQuery can be swapped out for Zepto (jQuery alternative) YMMV.
 </script>
 
     </slide-item>
@@ -579,19 +546,51 @@ No wonder why nobody wants to do write cross compatible modules in JavaScript.
     <slide-index>Slide #18</slide-index>
   
     <slide-item id="19">
-      <h1>Never modify state of your objects inside the root application object.</h1>
+      <h3>Defining a Router.</h3>
+<pre><code class="lang-javascript">var Router = Backbone.Router.extend({
+  routes: {
+    &quot;&quot;: &quot;home&quot;,
+    &quot;weather/:city&quot;: &quot;showWeather&quot;,
+    &quot;weather/:lat/:lng&quot;: &quot;showWeatherByLatLng&quot;
+  },
+
+  // Useful for setting up models and collections shared throughout the
+  // application.
+  initialize: function() {},
+
+  // Called when `/` is hit.
+  home: function() {},
+
+  // Called when `/weather/someCityName` is hit.
+  showWeather: function(city) {},
+
+  // Called when `/weather/someLat/someLong` is hit.
+  showWeatherByLatLng: function(lat, lng) {}
+});</code></pre>
 <style scoped>
   @host {
-    background-color: #84D374;
-    color: #FFF;
+    background: #FFF;
+  }
+
+  h3 {
+    color: #333;
+  }
+
+  pre {
+    min-width: 100%;
+  }
+
+  pre code {
+    line-height: 23px;
   }
 </style>
 
-<script type="none" slide-notes>
-  - This will affect testing and cause weird effects.
+<script type="speaker-notes">
+- Very useful for loading individual modules without starting the application.
+  - If you start the application you may have side effects that influence
+    modules, which isn't very good for testing with a clean slate.
 
-  - Unless you're patching other libraries that aren't being tested like
-    Backbone.
+- With large applications you may want many routers to isolate concerns.
 </script>
 
     </slide-item>
@@ -599,59 +598,41 @@ No wonder why nobody wants to do write cross compatible modules in JavaScript.
     <slide-index>Slide #19</slide-index>
   
     <slide-item id="20">
-      <h1>Decouple the application running from the configuration loading.</h1>
-<p>RequireJS specific.</p>
+      <h3>Define a model to store the weather.</h3>
+<pre><code class="lang-javascript">var WeatherModel = Backbone.Model.extend({
+  url: function() {},
+
+  parse: function(resp) {}
+});</code></pre>
 <style scoped>
   @host {
-    background-color: #84D374;
-    color: #FFF;
+    background: #FFF;
   }
 </style>
-
-<script type="none" slide-notes>
-  - This will affect testing and cause weird effects.
-
-  - Unless you're patching other libraries that aren't being tested like
-    Backbone.
-</script>
 
     </slide-item>
 
     <slide-index>Slide #20</slide-index>
   
     <slide-item id="21">
-      <h1>What are Web Components?</h1>
-<div class="wrap">
-  <p class="subject">A collective of five W3C Recommendations.</p>
-</div>
+      <h3>Create a reusable template with variable data.</h3>
+<pre><code class="lang-markup">&lt;script id=&quot;weather-template&quot; type=&quot;text/template&quot;&gt;
+  &lt;h4 class=&quot;forecast&quot;&gt;
+    &lt;%= model.get(&quot;weather&quot;)[0].description %&gt;
+  &lt;/h4&gt;
 
-<p><strong>Templates</strong>, <strong>Decorators</strong>, <strong>Custom Elements</strong>, <strong>Shadow DOM</strong>, <strong>Imports</strong> <span class="remaining"><strong>&amp; MDV</strong></span></p>
+  &lt;hr&gt;
+
+  &lt;div class=&quot;region&quot;&gt;
+    &lt;table class=&quot;pure-table pure-table-horizontal&quot;&gt;
+      &lt;tbody&gt;
+
+
+  ...
+&lt;/script&gt;</code></pre>
 <style scoped>
   @host {
-    background: hsl(0, 90%, 30%);
-    color: #FFF;
-  }
-
-  .wrap {
-    margin-bottom: 120px;
-  }
-
-  .subject {
-    background: rgba(255, 255, 255, .5);
-    padding: 10px;
-    color: #333;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 33px;
-    margin-top: -15px;
-    top: 50%;
-    text-align: center;
-  }
-
-  .remaining {
-    color: rgba(255, 255, 255, .5);
+    background: #FFF;
   }
 </style>
 
@@ -660,186 +641,76 @@ No wonder why nobody wants to do write cross compatible modules in JavaScript.
     <slide-index>Slide #21</slide-index>
   
     <slide-item id="22">
-      <h1>Single vs. Multiple Views.</h1>
-<p><img src="images/test.png"></p>
+      <h4>WeatherView</h4>
+<pre><code class="lang-javascript">// The easy one.
+var WeatherView = Backbone.View.extend({
+  initialize: function() {},
+
+  render: function() {},
+
+  renderFailure: function() {}
+});</code></pre>
+<h4>FormView</h4>
+<pre><code class="lang-javascript">var FormView = Backbone.View.extend({
+  el: &quot;.pure-form&quot;,
+
+  tryGeolocation: true,
+
+  events: {},
+
+  changeWeather: function(ev) {},
+  showWeather: function(ev) {},
+  autoDetect: function(ev) {},
+
+  initialize: function() {}
+});</code></pre>
 <style scoped>
   @host {
-    background: hsl(0, 58%, 42%);
-    color: #FFF;
+    background: #FFF;
+  }
+
+  h4 {
+    padding-bottom: 4px;
+    display: block;
+    width: 100%;
+    margin-bottom: 0px;
+    text-align: center;
   }
 </style>
-
 
     </slide-item>
 
     <slide-index>Slide #22</slide-index>
   
     <slide-item id="23">
-      <h1>Markup or Source driven definitions?</h1>
-<p>Can either be assembled in the client markup:</p>
-<pre><code class="lang-markup">&lt;element&gt;
-  &lt;template&gt;&lt;/template&gt;
-  &lt;style&gt;&lt;/style&gt;
-  &lt;script&gt;({ someMethod: function() {} })&lt;/script&gt;
-&lt;/element&gt;</code></pre>
-<p>Or can be assembled entirely in script:</p>
-<pre><code class="lang-javascript">Component.extend({
-  template: &quot;&quot;,
-  style: &quot;&quot;,
-
-  // This is the script.
-  someMethod: function() {}
-});</code></pre>
+      <h1>Exploring the advanced branch</h1>
 <style scoped>
   @host {
-    background: hsl(0, 49%, 48%);
-    color: #FFF;
+    background: #FFF;
   }
 </style>
+
+<script type="speaker-notes">
+- Same workflow concepts.
+  - Easy migration.
+- Much improved build process.
+</script>
 
     </slide-item>
 
     <slide-index>Slide #23</slide-index>
   
     <slide-item id="24">
-      <h1>Decorators, melting pot example.</h1>
-<pre><code class="lang-markup">&lt;style&gt;
-details {
-    decorator: url(#details-closed);
-}
-details[open] {
-    decorator: url(#details-open);
-}
-&lt;/style&gt;
-
-&lt;decorator id=&quot;details-closed&quot;&gt;
-    &lt;script&gt;
-        function clicked(event) {
-            event.target.setAttribute(&#39;open&#39;, &#39;open&#39;);
-        }
-        [{selector: &#39;#summary&#39;, type: &#39;click&#39;, handler: clicked}];
-    &lt;/script&gt;
-    &lt;template&gt;
-        &lt;a id=&quot;summary&quot;&gt;
-            &amp;blacktriangleright; &lt;content select=&quot;summary&quot;&gt;&lt;/content&gt;
-        &lt;/a&gt;
-    &lt;/template&gt;
-&lt;/decorator&gt;
-
-&lt;decorator id=&quot;details-open&quot;&gt;
-    &lt;!-- as illustrated above --&gt;</code></pre>
+      <h1>Questions?</h1>
 <style scoped>
   @host {
-    background: hsl(0, 51%, 56%);
-    color: #FFF;
+    background: #FFF;
   }
 </style>
 
     </slide-item>
 
     <slide-index>Slide #24</slide-index>
-  
-    <slide-item id="25">
-      <h1>Dynamic Components.</h1>
-<p>An alternative to piecing together DOM snippets to define a dynamic component,
-take it more </p>
-<pre><code class="lang-javascript">var MyComponent = Backbone.Component.extend({
-  // Define a custom element or selector.
-  tagName: &quot;my-component&quot;,
-
-  // Custom styles to be applied only to this component.
-  style: &quot;@host { font-weight: bold; } p { color: red; }&quot;,
-
-  // Bind DOM events to only instances of this component.
-  events: {
-    &quot;click p&quot;: &quot;showAlert&quot;
-  },
-
-  // Event handlers are exactly the same as Backbone.View.
-  showAlert: function(ev) {
-    alert(ev.target.innerHTML);
-  }
-});</code></pre>
-<style scoped>
-  @host {
-    background: hsl(0, 60%, 66%);
-    color: #FFF;
-  }
-
-  pre {
-    width: 100%;
-  }
-
-  pre code {
-    line-height: 23px;
-  }
-</style>
-
-    </slide-item>
-
-    <slide-index>Slide #25</slide-index>
-  
-    <slide-item id="26">
-      <h1>Templates.</h1>
-<p>Nervous about these in the spec, because it will eventually advocate a specific
-template engine.</p>
-<style scoped>
-  @host {
-    background: hsl(0, 59%, 76%);
-    color: #333;
-  }
-
-  pre {
-    width: 100%;
-  }
-
-  pre code {
-    line-height: 23px;
-  }
-</style>
-
-
-    </slide-item>
-
-    <slide-index>Slide #26</slide-index>
-  
-    <slide-item id="27">
-      <h1>Scoped CSS.</h1>
-<p>Currently part of the HTML5 specification.</p>
-<p>Inline scoped CSS.</p>
-<pre><code class="lang-markup">&lt;h1&gt;Hi&lt;/h1&gt;
-&lt;div&gt;
-  &lt;h1&gt;You&lt;/h1&gt;
-  &lt;style scoped&gt;
-    h1 { color: red; }
-  &lt;/style&gt;
-&lt;/div&gt;</code></pre>
-<p>Dynamically scoped CSS.</p>
-<pre><code class="lang-javascript">new ScopedCss(&quot;.some-selector&quot;, &quot;someCss&quot;).appendTo($(&quot;body&quot;));</code></pre>
-<style scoped>
-  @host {
-    background: #FFF;
-    color: #333;
-  }
-
-  pre {
-    width: 100%;
-  }
-
-  pre code {
-    line-height: 23px;
-  }
-</style>
-
-    </slide-item>
-
-    <slide-index>Slide #27</slide-index>
-  
-    <slide-item id="28">
-      
-    </slide-item>
-
-    <slide-index>Slide #28</slide-index>
   
 
   <!-- Third-party. -->
