@@ -1,4 +1,4 @@
-![](https://github.com/tbranyen/springone-backbone/raw/master/images/splash.png)
+![](https://github.com/tbranyen/springone-backbone/raw/master/images/backbone.png)
 
 About
 -----
